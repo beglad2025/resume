@@ -1,0 +1,407 @@
+@charset "utf-8";
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,legend,textarea,p,blockquote,th,td,input,select,textarea,button{
+    margin:0;
+    padding:0
+}
+
+dl,ul,ol,menu,li{
+    list-style:none
+}
+
+
+/*링크 태그*/
+a{
+    font-weight:bold;
+    color:#006579;
+    text-decoration:none
+}
+a:active{
+    background-color:transparent;
+    text-decoration:underline
+}
+#oneIndex{
+    margin:20px;
+    text-align:center;
+}
+
+
+/*배경 만들기*/
+
+body{
+    background:#B2CCFF;
+    width:1340px;
+    height:1740px;
+    font-size:15px;
+    line-height:1.5;
+    font-family:'맑은 고딕', dotum, sans-serif;
+}
+
+#wrap{
+    border-radius:15px;
+    background:#fff;
+    width:1300px;
+    height:1700px;
+    padding:15px;
+    position:relative;
+    margin:10px;
+}
+
+
+/*icon 설정*/
+
+.icon{
+    display:inline-block;
+    overflow:hidden;
+    font-size:0;
+    background-size:cover;
+    line-height:0;
+    text-indent:-9999px;
+    vertical-align:top;
+    width:25px;
+    height:25px;
+    margin-left:30px;
+    margin-bottom:15px;
+}
+
+#birth{
+    background-image:url("image/birth.png");
+}
+#address{
+    background-image:url("image/address.png");
+}
+#call{
+    background-image:url("image/call.png");
+}
+#email{
+    background-image:url("image/email.png");
+}
+#link{
+    background-image:url("image/link.png");
+    width:40px;
+    height:40px;
+    margin-left:50px;
+}
+#career{
+    background-image:url("image/domain.png");
+    width:45px;
+    height:45px;
+}
+#lang{
+    background-image:url("image/lang.png");
+    width:50px;
+    height:50px;
+}
+#port{
+    background-image:url("image/computer.png");
+    width:45px;
+    height:45px;
+}
+#strength{
+    background-image:url("image/skill.png");
+    width:45px;
+    height:45px;
+}
+
+#skill{
+    background-image:url("image/chart.svg");
+    width:40px;
+    height:40px;
+}
+
+
+/*본격적인 내용들에 대한 설정*/
+
+#oneIntro{
+    border-right:thick solid #B2CCFF;
+    width:400px;
+    height:1670px;
+    float:left;
+    padding:10px;
+}
+
+#oneCareer{
+    width:850px;
+    height:1670px;
+    float:left;
+    padding:10px;
+}
+
+.my_photo{margin:100px 115px 60px;}
+
+.my_info h1{
+    font-size:70px;
+    line-height:62px;
+    margin:0px 85px;
+}
+
+.my_info h3{
+    font-size:30px;
+    margin:30px 100px;
+}
+
+.text{
+    margin-bottom:20px;
+    margin-left:10px;
+    font-size:18px;
+}
+
+h2{
+    margin:20px 0px;
+}
+h2 .txt_title{
+    color:#de585a;
+    font-size:30px;
+}
+
+.philo{
+    font-size:23px;
+    color:#001B81;
+    margin-left:20px;
+}
+
+.domain h3{
+    margin:5px 70px 20px;
+}
+h3 .txt_title{
+    font-size:23px;
+}
+
+.txt_date{
+    float:left;
+    width:220px;
+    margin-right:30px;
+}
+.txt_date:after{
+    display:inline-block;
+    content:':'
+}
+
+.txt_sub{
+    color:#8d8683;
+}
+.txt_sub:before{
+    display:inline-block;
+    content:'|';
+    margin:0 10px;
+    color:#8d8683;
+}
+
+
+/*li 앞에 들어가는 이미지*/
+/*시간 순으로 나열되는 education의 li에 해당하는 것*/
+.my_edu li{
+    padding:5px 5px 11px 80px;
+    background-image:url("image/timeline-middle.png");
+    background-repeat:no-repeat;
+    background-size:30px 60px;
+    background-position:25px 0px;
+}
+.my_edu li:first-child{
+    background-image:url("image/timeline-first.png");
+}
+.my_edu li:last-child{
+    background-image:url("image/timeline-last.png");
+}
+/*시간 순으로 나열되는 experience와 computer science의 li에 해당하는 것*/
+.expe li,.area_portfolio li{
+    padding:2px 5px 16px 100px;
+    background-image:url("image/timeline-middle.png");
+    background-repeat:no-repeat;
+    background-size:22px auto;
+    background-position:280px 0px;
+}
+.expe li:first-child,.area_portfolio li:first-child{
+    background-image:url("image/timeline-first.png");
+}
+.expe li:last-child,.area_portfolio li:last-child{
+    background-image:url("image/timeline-last.png");
+}
+/*그냥 나열만 진행되는 certificate의 li에 해당하는 것*/
+.cert li,.area_lang .txt_info{
+    padding:2px 5px 16px 135px;
+    background-image:url("image/check.png");
+    background-repeat:no-repeat;
+    background-size:22px auto;
+    background-position:95px 0px;
+}
+
+
+/*strength 부분*/
+.box_strength{
+    height:250px;
+}
+.inner_list{
+    width:200px;
+    margin:20px;
+}
+.inner_list li{
+    padding:7px 0px;
+    text-align:right;
+    font-size:17px
+}
+.inner_list li .ico_grph{
+    display:inline-block;
+    width:12px;
+    height:10px;
+    border-radius:50%;
+    margin-left:20px
+}
+.inner_list li:nth-child(1) .ico_grph{
+    background-color:#F2CB61
+}
+.inner_list li:nth-child(2) .ico_grph{
+    background-color:#BCE55C
+}
+.inner_list li:nth-child(3) .ico_grph{
+    background-color:#5CD1E5
+}
+.inner_list li:nth-child(4) .ico_grph{
+    background-color:#6799FF
+}
+.inner_list li:nth-child(5) .ico_grph{
+    background-color:#E7E7E7
+}
+
+/*strength의 원형 그래프 부분*/
+.pie{
+    position:absolute;
+    width:100px;
+    height:200px;
+    overflow:hidden;
+    top:1100px;
+    left:900px;
+    -webkit-transform-origin:left center;
+    transform-origin:left center
+}
+
+.pie:before{
+    content:"";
+    position:absolute;
+    width:100px;
+    height:200px;
+    left:-100px;
+    border-radius:100px 0 0 100px;
+    -webkit-transform-origin:right center;
+    transform-origin:right center
+}
+.pie.big:before{
+    left:0
+}
+.pie.big:after{
+    content:"";
+    position:absolute;
+    width:100px;
+    height:200px;
+    left:100px;
+    border-radius:0 100px 100px 0
+}
+.pie:nth-of-type(1):before,.pie:nth-of-type(1):after{
+    background-color:#F2CB61
+}
+.pie:nth-of-type(2):after,.pie:nth-of-type(2):before{
+    background-color:#BCE55C
+}
+.pie:nth-of-type(3):after,.pie:nth-of-type(3):before{
+    background-color:#5CD1E5
+}
+.pie:nth-of-type(4):after,.pie:nth-of-type(4):before{
+    background-color:#6799FF
+}
+.pie:nth-of-type(5):after,.pie:nth-of-type(5):before{
+    background-color:#E7E7E7
+}
+.pie[data-start="54"]{
+    -webkit-transform:rotate(54deg);
+    transform:rotate(54deg)
+}
+.pie[data-start="144"]{
+    -webkit-transform:rotate(144deg);
+    transform:rotate(144deg)
+}
+.pie[data-start="252"]{
+    -webkit-transform:rotate(252deg);
+    transform:rotate(252deg)
+}
+.pie[data-start="324"]{
+    -webkit-transform:rotate(324deg);
+    transform:rotate(324deg)
+}
+.pie[data-value="15"]:before{
+    -webkit-transform:rotate(54deg);
+    transform:rotate(54deg)
+}
+.pie[data-value="25"]:before{
+    -webkit-transform:rotate(90deg);
+    transform:rotate(90deg)
+}
+.pie[data-value="30"]:before{
+    -webkit-transform:rotate(108deg);
+    transform:rotate(108deg)
+}
+.pie[data-value="20"]:before{
+    -webkit-transform:rotate(72deg);
+    transform:rotate(72deg)
+}
+.pie[data-value="10"]:before{
+    -webkit-transform:rotate(36deg);
+    transform:rotate(36deg)
+}
+
+
+/*technical 가로형 막대그래프 부분*/
+.area_technical{
+    width:700px
+}
+
+.box_grph{
+    float:left;
+}
+
+.list_standard{
+    padding-left:250px;
+    height:10px;
+    margin-bottom:15px
+}
+.inner_technical{
+    margin-left:100px;
+}
+
+.list_standard div{
+    float:left;
+    border-bottom:2px solid #8d8683;
+    border-right:2px solid #8d8683;
+    font-size:0;
+    width:25%;
+    height:10px;
+    box-sizing:border-box;
+}
+.list_standard div:first-child{
+    border-left:2px solid #8d8683
+}
+
+.inner_technical li:after{
+    display:block;
+    content:'';
+    clear:both
+}
+.inner_technical ul li .tit_technical{
+    float:left;
+    min-width:150px;
+    font-size:18px
+}
+.inner_technical ul li .box_grph{
+    float:left;
+    width:450px;
+    margin-top:10px
+}
+.inner_technical ul li .ico_grph{
+    display:block;
+    height:10px;
+    background-color:#8a8b8a;
+    border-radius:5px
+}
+.inner_technical ul li .ico_grph.emph{
+    background-color:#FF8383;
+}
+
+
